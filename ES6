@@ -1,7 +1,39 @@
-var and let keywords-------------------------------------------------
+var, let and const keywords-------------------------------------------------
   var lets you override its values
+  it can be declared globally or within a function locally
+  
   let does not lets you override its code and throws error on trying to do so
-
-"use strict"---------------------------------------------------------
+  it has local scope
+  
+  const keyword lets you declare a variable and has 'read-only' property.
+  they cannot be reassigned 
+  
+"use strict"----------------------------------------------------------------
   enables strict mode and watched for common mistakes
   
+array declaration using const-----------------------------------------------
+  array declared using const are mutable. example:-\
+  const s = [2, 3, 4];
+  s[1] = 5; //s = [2, 5, 4]
+  
+freezing objects to prevent mutation----------------------------------------
+  to prevent any kind of mutations we use
+      Object.freeze(objectname);
+      
+  example:-
+      const things = {apple, cat, ball};
+      Object.freeze(things); //no mutation is possible in things
+ 
+creating inline functions / concise anonymous functions----------------------
+     to create a concise function we use the following syntax:-
+          const afun = function(){
+             const aval = "value";
+             return aconst;
+             }
+             
+                OR
+                
+          const afun= () => {
+             const aval = "value";
+             return aconst;
+             }
