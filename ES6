@@ -1,0 +1,7 @@
+var and let keywords-------------------------------------------------
+  var lets you override its values
+  let does not lets you override its code and throws error on trying to do so
+
+"use strict"---------------------------------------------------------
+  enables strict mode and watched for common mistakes
+  
