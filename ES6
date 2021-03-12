@@ -37,3 +37,23 @@ creating inline functions / concise anonymous functions----------------------
              const aval = "value";
              return aconst;
              }
+             
+ using the spread operator to compute values----------------------------------
+       the spread operator is helpful where a number of argu,ents are expected. 
+       Eg:- for calculating the maximum number in an array. using var declaration with apply, math can be tedious and thus spread operator can be useful
+             const arr = [ 1, 23, 65, 78];
+             const maximum = Math.max(...arr);
+             
+ using destructive assignment to assign values from objects directly----------
+        we can shorten a piece of code to assign values directly from the objects like :-
+        const jhon = { age: 30, title: sikle};
+        const age = jhon.age;
+        const title = jhon.title;
+        
+        INSTEAD OF THIS CODE 
+        const jhon = { age: 30, title: sikle};
+        const {age, title} = jhon; //does the same as the above code
+        
+        TO ASSIGN A DIFFERENT VARIABLE NAME 
+        const jhon = { age: 30, title: sikle};
+        const {age: user_age, title: user_title} = jhon;
