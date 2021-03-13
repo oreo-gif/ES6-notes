@@ -60,4 +60,24 @@ creating inline functions / concise anonymous functions----------------------
         
         TO ASSIGN VALUE FROM A NESTED OBJECT
         const people = { jhon { age:21, title:doe }};
-        const {jhon { age, title} = people;
+        const {jhon :{ age, title} = people;
+
+using destructive assignment to access the elements of an array------------------
+        for assigning values to array directly we can use the variable name
+        Eg:-
+           const [a, b , , , c] = [1, 2, 3, 4, 5, 6, 7];
+           console.log(a, b, c); //1, 2, 6
+           
+           //for swapping values
+           a = 3;
+           b = 6;
+           [a,b] = [b,a];
+           
+using destructive assignment with rest parameter----------------------------------
+      we can use rest parameter and destructive assignment together too
+      Eg:-
+          const [a,b, ...arr] = [1, 2, 3, 4, 5, 6, 7];
+          console.log(a,b); //1, 2
+          console.log(...arr); //3, 4, 5, 6, 7
+          
+          
