@@ -80,4 +80,8 @@ using destructive assignment with rest parameter--------------------------------
           console.log(a,b); //1, 2
           console.log(...arr); //3, 4, 5, 6, 7
           
-          
+writing functions directly using the destructive assignment-----------------------
+      we can directly assign vales in a function using destructive assigment:-
+      Eg:-
+         const temp = { min: 10, max: 40, day: 32 };
+         const avg_temp = ({ min, max }) => (min + max) / 2.0;
