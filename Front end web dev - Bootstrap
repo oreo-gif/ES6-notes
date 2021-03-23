@@ -1,0 +1,14 @@
+Adding bootstrap-----------------
+ bootstrap is a CSS framework with inbuilt classes. resizing of elements is adone automatically in bootstrap
+To add bootstap add the following link to your file:-
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+
+Classes in Bootstrap---------------
+  <div class="container-fluid">                             utilizes 100% of the viewport
+  <img class="img-responsive">                              fits the image to 100% of the screen
+  class= "text-center"                                      shifts text to center
+  <button class="btn btn-default">(basic button)            btn - grey colour button with smooth edges and spacing
+                                                            btn-default - colour animation to the button 
+  <button class="btn-block">                                creates a button covering 100% width of screen        
+  <button class="btn-primary">                              creates a classic button with blue colour
+  
