@@ -6,9 +6,22 @@ To add bootstap add the following link to your file:-
 Classes in Bootstrap---------------
   <div class="container-fluid">                             utilizes 100% of the viewport
   <img class="img-responsive">                              fits the image to 100% of the screen
-  class= "text-center"                                      shifts text to center
+  <h2 class= "text-center">                                 shifts text to center (can be used with other text tags)
+  
+  BUTTON------
   <button class="btn btn-default">(basic button)            btn - grey colour button with smooth edges and spacing
                                                             btn-default - colour animation to the button 
+  (btn btn-default is recommended to be added with every button)                                                          
   <button class="btn-block">                                creates a button covering 100% width of screen        
   <button class="btn-primary">                              creates a classic button with blue colour
+  <button class="btn-info">                                 creates a classic button with light blue colour
+  <button class="btn-danger">                               creates a classic button with red colour
   
+  GRID--------
+  (div is used)
+  <div class="row">                                         creates a row
+  <div class="col-xs-4">                                    col     - creates a column
+                                                            xs/md   - size of button (xs-extra small, md-medium)
+                                                            1/2/3.. - width of button
+  inline editing
+  <span class="text-danger">                                used for inline editing (this tag changes the color to red) 
