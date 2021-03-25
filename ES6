@@ -24,7 +24,7 @@ freezing objects to prevent mutation----------------------------------------
       const things = {apple, cat, ball};
       Object.freeze(things); //no mutation is possible in things
  
-creating inline functions / concise anonymous functions----------------------
+creating inline functions / concise anonymous functions---------------------
      to create a concise function we use the following syntax:-
           const afun = function(){
              const aval = "value";
@@ -38,13 +38,13 @@ creating inline functions / concise anonymous functions----------------------
              return aconst;
              }
              
- using the spread operator to compute values----------------------------------
+ using the spread operator to compute values--------------------------------
        the spread operator is helpful where a number of argu,ents are expected. 
        Eg:- for calculating the maximum number in an array. using var declaration with apply, math can be tedious and thus spread operator can be useful
              const arr = [ 1, 23, 65, 78];
              const maximum = Math.max(...arr);
              
- using destructive assignment to assign values from objects directly----------
+ using destructive assignment to assign values from objects directly--------
         we can shorten a piece of code to assign values directly from the objects like :-
         const jhon = { age: 30, title: sikle};
         const age = jhon.age;
@@ -62,7 +62,7 @@ creating inline functions / concise anonymous functions----------------------
         const people = { jhon { age:21, title:doe }};
         const {jhon :{ age, title} = people;
 
-using destructive assignment to access the elements of an array------------------
+using destructive assignment to access the elements of an array-------------
         for assigning values to array directly we can use the variable name
         Eg:-
            const [a, b , , , c] = [1, 2, 3, 4, 5, 6, 7];
@@ -73,15 +73,28 @@ using destructive assignment to access the elements of an array-----------------
            b = 6;
            [a,b] = [b,a];
            
-using destructive assignment with rest parameter----------------------------------
+using destructive assignment with rest parameter---------------------------
       we can use rest parameter and destructive assignment together too
       Eg:-
           const [a,b, ...arr] = [1, 2, 3, 4, 5, 6, 7];
           console.log(a,b); //1, 2
           console.log(...arr); //3, 4, 5, 6, 7
           
-writing functions directly using the destructive assignment-----------------------
+writing functions directly using the destructive assignment-----------------
       we can directly assign vales in a function using destructive assigment:-
       Eg:-
          const temp = { min: 10, max: 40, day: 32 };
          const avg_temp = ({ min, max }) => (min + max) / 2.0;
+         
+creating strings with template litrals--------------------------------------
+      template litral helps in  making complex strings easier
+      The string should start and end with `  and not '. the assignement is done by ${..}
+      Eg:-
+         const person = { name: abc, age: 50};
+         const greetings = ` Hi everyone , my name is ${person.name}. I am ${person.age} years old.`;
+         
+writing a concise object declaration with ES6-------------------------------
+      rather than writing {x:x, y:y} we can directly assign by writing ({x, y})
+      Eg:- 
+         person( "abc", 28, "female");
+         const person = (name, age, gender) =>  ({ name, age gender})
