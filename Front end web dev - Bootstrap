@@ -1,12 +1,17 @@
 Adding bootstrap-----------------
  bootstrap is a CSS framework with inbuilt classes. resizing of elements is adone automatically in bootstrap
+ 
 To add bootstap add the following link to your file:-
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
 
-Classes in Bootstrap---------------
+To add a comment---
+<!-- abc -->
+
+Libraries in Bootstrap---------------
   <div class="container-fluid">                             utilizes 100% of the viewport
   <img class="img-responsive">                              fits the image to 100% of the screen
-  <h2 class= "text-center">                                 shifts text to center (can be used with other text tags)
+  <h2 class= "text-center">                                 text-center - shifts text to center (can be used with other text tags)
+                                                            text-primary - gives blue color to the text
   
   BUTTON------
   <button class="btn btn-default">(basic button)            btn - grey colour button with smooth edges and spacing
@@ -25,3 +30,17 @@ Classes in Bootstrap---------------
                                                             1/2/3.. - width of button
   inline editing
   <span class="text-danger">                                used for inline editing (this tag changes the color to red) 
+  
+  TO TARGET INLINE ELEMENTS--------
+  <span class="text-danger">abc</span>                      to bring changes to an inline text
+  
+  Adding FONT AWESOME----------
+  <i class="fas fas-thumbs-up">...</i>                     i is used to add font awesome to a particular part 
+                                                           fas              - to add font awesome
+                                                           fa-thumbs-up     - to add thumbs up icon
+                                                           fa-info-circle   - to add info circle sign
+                                                           fa-trash         - to add trashbin sign
+                                                           fa-paper-plane   - to add a paperplane sign
+                                                           
+   Adding DEPTH to elements-----------
+   <div class="well">..</div>                              it is used to give a visual depth to an element   
