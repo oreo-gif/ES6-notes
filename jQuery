@@ -1,0 +1,8 @@
+To write jQuery :-
+    <script>
+      $(document).ready(function() {
+      
+        WRITE YOUR JQUERY COMMANDS HERE
+        
+      });
+    </script>
